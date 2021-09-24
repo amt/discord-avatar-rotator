@@ -33,7 +33,7 @@ def main(args):
         files = [
             f.path
             for f in os.scandir(args.dir)
-            if f.name.endswith((".gif", ".jpeg", ".png", ".jpg"))
+            if f.name.endswith((".gif", ".jpeg", ".png", ".jpg", ".jfif"))
         ]
         debug(f"Files in directory {args.dir} are: {files}")
         TARGET = random.choice(files)
@@ -115,7 +115,7 @@ if __name__ == "__main__":
         "--quiet",
         dest="quiet",
         action="store_true",
-        help="Enable quiet mode only logging errors.",
+        help="Enable quiet mode only logging warnings+.",
     )
     args = parser.parse_args()
     main(args)
