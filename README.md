@@ -26,5 +26,5 @@ Running manually:
 
 or via cron
 ```bash
-*/10 * * * * (cd /mnt/d/discord && ./rotator.py -c --dir profiles)
+*/10 * * * * (cd /mnt/d/discord-avatar-rotator && ./rotator.py -c --dir profiles)
 ```
