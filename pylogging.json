@@ -3,7 +3,8 @@
   "disable_existing_loggers": false,
   "formatters": {
     "simple": {
-      "format": "%(asctime)s - %(name)s - %(levelname)s - %(lineno)s:%(funcName)s - %(message)s"
+      "format": "%(asctime)s - %(name)s - %(levelname)s - %(lineno)s:%(funcName)s - %(message)s",
+      "datefmt": "%Y-%m-%d %H:%M:%S"
     }
   },
   "handlers": {
